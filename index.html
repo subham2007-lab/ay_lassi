@@ -285,9 +285,17 @@ section{
 }
 
 .about-image{
-    background:linear-gradient(135deg,#ffd166,#ff7b00);
     min-height:350px;
     border-radius:25px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 .about-text h3{
@@ -735,7 +743,9 @@ footer{
 
 <div class="about">
 
-<div class="about-image"></div>
+<div class="about-image">
+    <img src="home.jpeg" alt="AY LASSI SHOP">
+</div>
 
 <div class="about-text">
 <h3>About AY LASSI SHOP</h3>
